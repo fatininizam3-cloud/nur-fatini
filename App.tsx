@@ -1,4 +1,3 @@
-
 import React, { useState, useRef, useEffect, useMemo } from 'react';
 import { geminiService } from './services/geminiService';
 import { Message, DashboardData } from './types';
@@ -57,7 +56,6 @@ const parseCSV = (csv: string) => {
   }).filter(r => r.objectid);
 };
 
-// Robot/Bot SVG Icon for Assistant
 const BotIcon = () => (
   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
     <rect x="3" y="11" width="18" height="10" rx="2" />
@@ -170,9 +168,9 @@ const App: React.FC = () => {
                <div className="w-24 h-24 bg-[#2F5D50] rounded-[2.5rem] flex items-center justify-center mb-8 border border-[#D9C5A0]/30 shadow-2xl">
                   <div className="text-[#D9C5A0]"><BotIcon /></div>
                </div>
-               <h2 className="text-2xl font-black text-white uppercase tracking-[0.3em] mb-6">Sedia Membantu</h2>
+               <h2 className="text-2xl font-black text-white uppercase tracking-[0.3em] mb-6">Smart Geobencana</h2>
                <p className="text-[#D9C5A0] text-sm font-medium max-w-2xl leading-relaxed opacity-90">
-                 Hi! Saya sedia membantu dalam menganalisis rancangan tempatan yang merangkumi sektor pengurusan risiko geobencana. Saya boleh menganalisis mengikut zon, negeri dan rancangan tempatan atau mengikut kategori dan komponen pengurusan.
+                 hi! saya sedia membantu dalam menganalisis rancangan tempatan yang merangkumi sektor pengurusan risiko geobecana. Saya boleh menganalisis mengikut zon, negeri dan rancangan tempatan atau mengikut kategori dan komponen pengurusan.
                </p>
                
                <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-4 w-full max-w-xl">
